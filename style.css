@@ -36,8 +36,8 @@ h1 {
   flex: 1 0 33.33%;
   overflow: hidden;
   position: relative;
-  /* สร้างพุ่มไม้ด้วย CSS ง่ายๆ (ถ้าไม่มีรูป bg-hole.png) */
-  background: url('bg-hole.png') bottom center no-repeat;
+ 
+  background: url('1.png') bottom center no-repeat;
   background-size: contain; 
 }
 
@@ -60,7 +60,7 @@ h1 {
   position: absolute;
   top: 100%;
   /* รูปน้อง Varanus */
-  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Varanus_salvator_-_01.jpg/545px-Varanus_salvator_-_01.jpg') bottom center no-repeat;
+  background: url('2.png') bottom center no-repeat;
   background-size: 60%;
   transition: all 0.4s;
   cursor: pointer;
