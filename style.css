@@ -1,0 +1,94 @@
+body {
+  text-align: center;
+  font-family: 'Kanit', sans-serif;
+  background-color: #f0f0f0; /* สีพื้นหลัง */
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+h1 {
+  color: #0035AD; /* Mahidol Blue */
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.highlight {
+  color: #B38F00; /* Mahidol Gold */
+}
+
+.score {
+  background: #0035AD;
+  padding: 0 20px;
+  line-height: 1;
+  border-radius: 1rem;
+  color: white;
+}
+
+.game {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.hole {
+  flex: 1 0 33.33%;
+  overflow: hidden;
+  position: relative;
+  /* สร้างพุ่มไม้ด้วย CSS ง่ายๆ (ถ้าไม่มีรูป bg-hole.png) */
+  background: url('bg-hole.png') bottom center no-repeat;
+  background-size: contain; 
+}
+
+/* ถ้าไม่มีรูปพุ่มไม้ ให้ใช้สีแทน */
+.hole:after {
+  display: block;
+  background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Nature_Bush_icon.svg/1200px-Nature_Bush_icon.svg.png) bottom center no-repeat;
+  background-size: contain;
+  content: '';
+  width: 100%;
+  height: 70px;
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+}
+
+.mole {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  /* รูปน้อง Varanus */
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Varanus_salvator_-_01.jpg/545px-Varanus_salvator_-_01.jpg') bottom center no-repeat;
+  background-size: 60%;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+
+/* คลาสที่จะถูกเติมด้วย JS เพื่อให้น้องโผล่ขึ้นมา */
+.hole.up .mole {
+  top: 0;
+}
+
+button {
+    background-color: #B38F00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Kanit';
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0035AD;
+}
+
+/* Responsive สำหรับมือถือ */
+@media (max-width: 600px) {
+    .game { width: 100%; height: 300px; }
+    h1 { font-size: 2rem; }
+}
