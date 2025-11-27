@@ -84,6 +84,7 @@ function showPlusOne(x, y) {
 function bonk(e) {
   if(!e.isTrusted) return;
   score++;
+  if(!this.parentNode.classList.contains('up')) return;
   this.parentNode.classList.remove('up'); 
   scoreBoard.textContent = score;
 
