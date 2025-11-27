@@ -1,19 +1,19 @@
 body {
   text-align: center;
   font-family: 'Kanit', sans-serif;
-  background-color: #f0f0f0; /* สีพื้นหลัง */
+  background-color: #f0f0f0; 
   margin: 0;
   padding-bottom: 50px;
 }
 
 h1 {
-  color: #0035AD; /* Mahidol Blue */
+  color: #0035AD; 
   font-size: 3rem;
   margin-bottom: 0;
 }
 
 .highlight {
-  color: #B38F00; /* Mahidol Gold */
+  color: #B38F00;
 }
 
 .score {
@@ -41,7 +41,7 @@ h1 {
   background-size: contain; 
 }
 
-/* ถ้าไม่มีรูปพุ่มไม้ ให้ใช้สีแทน */
+
 .hole:after {
   display: block;
   background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Nature_Bush_icon.svg/1200px-Nature_Bush_icon.svg.png) bottom center no-repeat;
@@ -59,14 +59,13 @@ h1 {
   height: 100%;
   position: absolute;
   top: 100%;
-  /* รูปน้อง Varanus */
   background: url('images/2.png') bottom center no-repeat;
   background-size: 60%;
   transition: all 0.4s;
   cursor: pointer;
 }
 
-/* คลาสที่จะถูกเติมด้วย JS เพื่อให้น้องโผล่ขึ้นมา */
+
 .hole.up .mole {
   top: 0;
 }
@@ -87,7 +86,7 @@ button:hover {
     background-color: #0035AD;
 }
 
-/* Responsive สำหรับมือถือ */
+
 @media (max-width: 600px) {
     .game { width: 100%; height: 300px; }
     h1 { font-size: 2rem; }
