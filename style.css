@@ -37,7 +37,7 @@ h1 {
   overflow: hidden;
   position: relative;
  
-  background: url('1.png') bottom center no-repeat;
+  background: url('images/1.png') bottom center no-repeat;
   background-size: contain; 
 }
 
@@ -60,7 +60,7 @@ h1 {
   position: absolute;
   top: 100%;
   /* รูปน้อง Varanus */
-  background: url('2.png') bottom center no-repeat;
+  background: url('images/2.png') bottom center no-repeat;
   background-size: 60%;
   transition: all 0.4s;
   cursor: pointer;
